@@ -1,0 +1,59 @@
+<html>
+<style>
+span.a{
+display:inline;
+width:100px;
+height:100px;
+padding:5px;
+border:1px solid blue;
+background-color:blue;
+}
+span.b{display:block;
+width:100px;
+height:100px;
+padding:5px;
+border:1px solid blue;
+background-color:pink;}
+span.c{
+display:inline-block;
+width:100px;
+height:100px;
+padding:5px;
+border:1px solid blue;
+background-color:yellow;
+}
+p:hover{
+color:red;
+}
+a:link{color:red;}
+a:visited{color:green;}
+a:hover{
+color:black;
+}
+a:active{color:blue;}
+
+h1::before{content:"->";}
+h1::after{content:"<-";}
+h1::selection{
+color:red;
+background:yellow;
+}
+p::first-letter{
+color:#ff0000;
+font-size:xx-large;}
+div:hover span{display:block;}
+div p{background-color:yellow;
+padding:20px;
+}
+</style>
+<body>
+<p>The <span class="a">summer</span></p>
+<p>The <span class="b">summer</span></p>
+<p>The <span class="c">summer</span></p>
+<a href="https://www.google.com/search?client=ubuntu&channel=fs&q=google&ie=utf-8&oe=utf-8" title="google">google</a>
+<h1>This is a heading</h1>
+<div>
+<p>The <span>winter</span></p>
+</div>
+</body>
+</html>
